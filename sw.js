@@ -1,6 +1,5 @@
-const CACHE = 'bib-planning-v2';
+const CACHE = 'bib-v3';
 const ASSETS = ['./', './index.html', './manifest.json', './docx.iife.js', './xlsx.min.js'];
-
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
   self.skipWaiting();
